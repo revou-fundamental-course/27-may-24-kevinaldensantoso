@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device width", initial-scale="1.0">
-       <title> Kevin Portfolio </title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width" , initial-scale="1.0">
+    <title> Kevin Portfolio </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logoicon"></div>
+    
+        <section>
+            <a class="nav-item" href="#Home">Home</a>
+            <a class="nav-item" href="#Our Profile">Our Profile</a>
+            <a class="nav-item" href="#Contact Us">Contact Us</a>
+        </section>
+    </nav>
+
+    <hr>
+
+    <section class="section-container">
+        <!-- Home -->
+        <section id="Home">
+            <header>
+                <h1>Hi <span id="user">Kevin</span>, Welcome to Our Website!</h1>
+                <script src="js/script.js"></script>
+            </header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque nemo autem pariatur ullam enim animi facilis alias totam atque temporibus in reprehenderit culpa quam voluptates soluta, aliquam ad officiis?</p>
+            </article>
+
+            <div class="banner-container">
+              <img
+              class="banner-container"
+              src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+              </img>
+            </div>
+        </section>
+        <br>
+        <hr>
         
+        <!-- Our Profile -->
+        <section id="Our Profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <article class="about-us">
+                <div>
+                    <div style="
+                        width: 50px; 
+                        height: 50px; 
+                        border-radius: 50%;
+                        background-image: url(https://picsum.photos/200);"></div>
+                    <h2>Who We Are</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolores dignissimos atque excepturi, et fugit magni quos eum eveniet unde mollitia corporis voluptas, nesciunt obcaecati pariatur porro nisi natus deleniti!</p>
+                </div>
+                <div>
+                    <div style="
+                        width: 50px; 
+                        height: 50px; 
+                        border-radius: 50%;
+                        background-image: url(https://picsum.photos/300);"></div>
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore illum molestiae dignissimos repellendus fuga sequi non voluptates, neque eos tempora error, accusantium eligendi quibusdam quam perspiciatis cumque! Ipsam, voluptatibus?</p>
+                </div>
+                <div>
+                    <div style="
+                        width: 50px; 
+                        height: 50px; 
+                        border-radius: 50%;
+                        background-image: url(https://picsum.photos/400);"></div>
+                    <h2>Our Mission</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis ratione adipisci vel voluptatem, est eum quo quia saepe facere esse. Adipisci earum ut impedit pariatur, doloribus quidem soluta accusamus.</p>
+                </div>
+            </article>
+        </section>
+        <hr>
+
+    <!-- Contact Us -->
+    <section id="Contact Us">
+        <header>
+            <h1> Contact Us</h1>
+        </header>
+
+         <!-- Form -->
+         <section>
+            <form name="contact-us-section" onsubmit="return handleValidation">
+              <table>
+                <tr class="contact-us-section">
+                  <td class="label">Name</td>
+                  <td class="label">:</td>
+                  <td>
+                    <input required
+                      type="text"
+                      class="input-text"
+                      name="nama"
+                      id="nama"
+                      placeholder= Nama Anda
+                      />                    
+                  </td>
+                </tr>
+      
+                <tr class="contact-us-section">
+                  <td class="label">Date of birth</td>
+                  <td class="label">:</td>
+                  <td>
+                    <input required
+                      type="date"
+                      class="input-date"
+                      name="tgl_lahir"
+                      id="tgl_lahir"
+                      placeholder="date"
+                    />
+                  </td>
+                </tr>
+      
+                <tr class="contact-us-section">
+                  <td class="label">Gender</td>
+                  <td class="label">:</td>
+                  <td>
+                    <input required
+                      type="radio"
+                      class="input-radio"
+                      id="laki-laki"
+                      name="jenis_kelamin"
+                      value="Laki-Laki"
+                    />
+                    <label for="laki-laki">Male</label>
+                    <input 
+                      type="radio"
+                      class="input-radio"
+                      id="perempuan"
+                      name="jenis_kelamin"
+                      value="Perempuan"
+                    />
+                    <label for="perempuan">Female</label>
+                  </td>
+                </tr>
+      
+                <tr class="contact-us-section">
+                  <td class="label">Message</td>
+                  <td class="label">:</td>
+                  <td>
+                    <textarea
+                      name="message"
+                      class="input-text"
+                      id="message"
+                      placeholder="Your message here"
+                      rows="4"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input required type="submit" class="button" value="Submit" />
+                  </td>
+                </tr>
+              </table>
+              <p id="error-name"></p>
+            </form>
+          </section>
+
+         <!-- Result -->
+        <section class="result-container">
+            <div class="result-container"> 
+            </div>
+        </section>
+
+    </section>
+    <footer>
+
+    </footer>
+
+    </section>
+
     </body>
+
 </html>
