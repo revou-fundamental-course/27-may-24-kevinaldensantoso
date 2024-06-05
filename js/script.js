@@ -47,3 +47,12 @@ function setName(Nama) {
     document.getElementById("error-name").innerHTML = ""
 }
 
+function fromValidation() {
+    let nama = document.getElementById('nama').value
+    if (nama == null || nama == '') {
+        alert('Input kosong');
+    } else {
+        console.log(nama)
+    }
+}
+
