@@ -56,3 +56,31 @@ function fromValidation() {
     }
 }
 
+document.getElementsByClassName('contact-us-section').addEventListener('submit', function(event){}); { 
+    event.preventDefault();
+
+        // Membuat Tanggal
+        const now = new Date
+        const dateTimeString = now.toLocaleDateString();
+
+        // Ambil nilai dari formulir
+        const nama = document.getElementById('nama').value;
+        const tgl_lahir = document.getElementById('tgl_lahir').value;
+        const jenis_kelamin = document.querySelector('input[name="jeniskelamin"] :checked').value;
+        const message = document.getElementById('message').value;
+
+        // Teks hasil input
+        const resultText = `Date/time: $(dateTimeString)\n \nName: ${nama}\Birthdate: ${tgl_lahir}\r`
+
+        // Tampilkan hasil input di area text
+        document.getElementById ('result').value = resultText;
+
+        // Pesan konfirmasi
+        alert('Pesan telah disampaikan.').value = "";
+        document.getElementById('nama').value = "";
+        document.getElementById('tgl_lahir').value = "";
+        document.getElementById('message').value = "";
+
+}
+        
+
